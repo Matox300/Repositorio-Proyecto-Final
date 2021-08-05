@@ -1,0 +1,151 @@
+.textoMusso {
+  width: 100%;
+  height: 100%;
+  color: white;
+  grid-area: area6;
+  background-color: #c56060; }
+
+.textoMarrero {
+  width: 100%;
+  height: 100%;
+  color: white;
+  grid-area: area10;
+  background-color: #c56060; }
+
+.textoTavella, .textoAntuna {
+  width: 100%;
+  height: 100%;
+  color: white;
+  grid-area: area7;
+  background-color: #528dc4; }
+
+.textoAntuna {
+  width: 100%;
+  height: 100%;
+  color: white;
+  grid-area: area9; }
+
+.textoPintos {
+  width: 100%;
+  height: 100%;
+  color: white;
+  grid-area: area8;
+  background-color: goldenrod; }
+
+.robertoMusso {
+  grid-area: area1;
+  height: 60px;
+  margin-top: 20px;
+  padding-top: 15px;
+  color: white;
+  background-color: #464646; }
+
+.santiagoTavella, .gustavoAntuna {
+  grid-area: area2;
+  height: 60px;
+  margin-top: 20px;
+  padding-top: 15px;
+  color: white;
+  background-color: #464646;
+  background-color: #282828; }
+
+.alvaroPintos {
+  grid-area: area3;
+  height: 60px;
+  margin-top: 20px;
+  padding-top: 15px;
+  color: white;
+  background-color: #464646;
+  background-color: black; }
+
+.gustavoAntuna {
+  grid-area: area4; }
+
+.santiagoMarrero {
+  grid-area: area5;
+  height: 60px;
+  margin-top: 20px;
+  padding-top: 15px;
+  color: white;
+  background-color: #464646; }
+
+@media only screen and (max-width: 600px) {
+  .robertoMusso {
+    grid-area: area1; }
+  .textoMusso {
+    grid-area: area3; }
+  .santiagoTavella, .gustavoAntuna {
+    grid-area: area2; }
+  .textoTavella, .textoAntuna {
+    grid-area: area4; }
+  .gustavoAntuna {
+    grid-area: area5; }
+  .textoAntuna {
+    grid-area: area7; }
+  .santiagoMarrero {
+    grid-area: area6; }
+  .textoMarrero {
+    grid-area: area8; }
+  .alvaroPintos {
+    grid-area: area9; }
+  .textoPintos {
+    grid-area: area11; } }
+
+@media only screen and (min-width: 600px) {
+  .robertoMusso {
+    grid-area: area1; }
+  .textoMusso {
+    grid-area: area3; }
+  .santiagoTavella, .gustavoAntuna {
+    grid-area: area2; }
+  .textoTavella, .textoAntuna {
+    grid-area: area4; }
+  .gustavoAntuna {
+    grid-area: area5; }
+  .textoAntuna {
+    grid-area: area7; }
+  .santiagoMarrero {
+    grid-area: area6; }
+  .textoMarrero {
+    grid-area: area8; }
+  .alvaroPintos {
+    grid-area: area9; }
+  .textoPintos {
+    grid-area: area11; } }
+
+@media only screen and (min-width: 1200px) {
+  .robertoMusso {
+    grid-area: area1; }
+  .textoMusso {
+    grid-area: area6; }
+  .santiagoTavella, .gustavoAntuna {
+    grid-area: area2; }
+  .textoTavella, .textoAntuna {
+    grid-area: area7; }
+  .alvaroPintos {
+    grid-area: area3; }
+  .textoPintos {
+    grid-area: area8; }
+  .gustavoAntuna {
+    grid-area: area4; }
+  .textoAntuna {
+    grid-area: area9; }
+  .santiagoMarrero {
+    grid-area: area5; }
+  .textoMarrero {
+    grid-area: area10; } }
+
+.tiendaOnline {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to right, #ffa600, rgba(138, 97, 21, 0.719)); }
+  .tiendaOnline h2 {
+    text-align: center;
+    margin: 50px;
+    padding-top: 20px;
+    font-family: 'Archivo Black', sans-serif; }
+  .tiendaOnline p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: black; }

@@ -1,0 +1,938 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+        /***************** INICIO ******************/
+.gridIncio{
+    display: grid;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas:"area1 area2 area3"                    
+                        "area4 area5 area3";
+    row-gap: 30px;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+.cuartetoTitulo{
+    font-size: 50px;
+    padding-top: 30px;
+}
+#fotoBandaIndex{
+    grid-area: area1;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+.texto1{
+    grid-area: area2;
+    width: 100%;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+}
+#fotoRecital{
+    grid-area: area4;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+.texto2{
+    grid-area: area5;
+    width: 100%;
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+}
+#argUru{
+    grid-area: area3;
+    width: 100%;
+    align-items: end;
+    border: 2px solid black;
+}
+
+#logoCuarteto{
+    height: 120px;
+    position: relative;
+    left: 66%;
+    border: 5px solid rgb(88, 58, 0);
+    bottom: 100px;
+}
+.headerIndex{
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    height: 150px;
+}
+.index{
+    background-color: rgb(243, 243, 243);
+}
+@media only screen and (max-width: 600px){
+    #logoCuarteto{
+        height: 90px;
+        position: relative;
+        left: 80%;
+        border: 5px solid rgb(88, 58, 0);
+        bottom: 100px;
+        margin-top: 20px;
+    }
+    .cuartetoTitulo{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .gridIncio{
+        display: grid;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+        grid-template-areas:"area1"                    
+                            "area2"
+                            "area3"
+                            "area4"
+                            "area5";
+        row-gap: 30px;
+        column-gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #fotoBandaIndex{
+        grid-area: area1;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto1{
+        grid-area: area2;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #fotoRecital{
+        grid-area: area3;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto2{
+        grid-area: area4;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #argUru{
+        grid-area: area5;
+        width: 100%;
+        align-items: end;
+        border: 2px solid black;
+        height: 80%;
+    }
+}
+@media only screen and (min-width:600px){
+    #logoCuarteto{
+        height: 90px;
+        position: relative;
+        left: 75%;
+        border: 5px solid rgb(88, 58, 0);
+        bottom: 100px;
+        margin-top: 20px;
+    }
+    .cuartetoTitulo{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .gridIncio{
+        display: grid;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+        grid-template-areas:"area1"                    
+                            "area2"
+                            "area3"
+                            "area4"
+                            "area5";
+        row-gap: 30px;
+        column-gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #fotoBandaIndex{
+        grid-area: area1;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto1{
+        grid-area: area2;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #fotoRecital{
+        grid-area: area3;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto2{
+        grid-area: area4;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #argUru{
+        grid-area: area5;
+        width: 100%;
+        align-items: end;
+        border: 2px solid black;
+        height: 80%;
+    }
+}
+@media only screen and (min-width:768px){
+    #logoCuarteto{
+        height: 90px;
+        position: relative;
+        left: 75%;
+        border: 5px solid rgb(88, 58, 0);
+        bottom: 100px;
+        margin-top: 20px;
+    }
+    .cuartetoTitulo{
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    .gridIncio{
+        display: grid;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+        grid-template-areas:"area1"                    
+                            "area2"
+                            "area3"
+                            "area4"
+                            "area5";
+        row-gap: 30px;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #fotoBandaIndex{
+        grid-area: area1;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto1{
+        grid-area: area2;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #fotoRecital{
+        grid-area: area3;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto2{
+        grid-area: area4;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 25px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #argUru{
+        grid-area: area5;
+        width: 100%;
+        justify-content:space-between;
+        border: 2px solid black;
+        height: 60%;
+    }
+}
+@media only screen and (min-width:992px){
+    #logoCuarteto{
+        height: 120px;
+        position: relative;
+        left: 66%;
+        border: 5px solid rgb(88, 58, 0);
+        bottom: 100px;
+    }
+    .cuartetoTitulo{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .gridIncio{
+        display: grid;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: 35% 35% 30%;
+        grid-template-rows: 400px 400px;
+        grid-template-areas:"area1 area2 area3"                    
+                            "area4 area5 area3";
+        row-gap: 30px;
+        column-gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+    }
+    #fotoBandaIndex{
+        grid-area: area1;
+        height: 80%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto1{
+        grid-area: area2;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #fotoRecital{
+        grid-area: area4;
+        height: 80%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto2{
+        grid-area: area5;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #argUru{
+        grid-area: area3;
+        width: 100%;
+        align-items: end;
+        border: 2px solid black;
+        height: 200px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .gridIncio{
+        display: grid;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: 40% 40% 20%;
+        grid-template-rows: 400px 400px;
+        grid-template-areas:"area1 area2 area3"                    
+                            "area4 area5 area3";
+        row-gap: 30px;
+        column-gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .cuartetoTitulo{
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    #fotoBandaIndex{
+        grid-area: area1;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto1{
+        grid-area: area2;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 30px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #fotoRecital{
+        grid-area: area4;
+        height: 100%;
+        width: 100%;
+        border: 2px solid black;
+    }
+    .texto2{
+        grid-area: area5;
+        width: 100%;
+        color: black;
+        background-color: white;
+        font-size: 30px;
+        line-height: 35px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid black;
+    }
+    #argUru{
+        grid-area: area3;
+        width: 100%;
+        align-items: end;
+        border: 2px solid black;
+    }
+    
+    #logoCuarteto{
+        height: 120px;
+        position: relative;
+        left: 66%;
+        border: 5px solid rgb(88, 58, 0);
+        bottom: 120px;
+    }
+    .headerIndex{
+        background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+        height: 150px;
+    }
+}
+        /************* GALERIA ***********/
+.flexAñosGaleria{                   /*Años de las fotos*/
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 50px;
+    justify-content: space-around;
+}
+.añosGaleria{
+    font-size: 40px;
+    color: green;
+}
+.imagenesGaleria{               /*Fotos*/
+    display: flex;
+    height: 550px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.fotoBanda{
+    text-align: center;
+}
+.textoAlbumes{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 70px;
+    font-size: 45px ;
+    color: rgb(130, 96, 168);
+    text-decoration: underline;
+    animation: tada;
+    animation-duration: 1s;
+}
+.textoGaleria{
+    padding: 40px;
+    text-align: center;
+    font-style: oblique;
+    text-decoration: underline;
+    color: rgb(130, 96, 168);
+    font-size: 45px;
+    animation: tada;
+    animation-duration: 2s;
+}
+.galeria{
+    background-color: rgb(243, 243, 243);
+}
+#hablaTuEspejo:hover{
+    transform: scale(1.3,1.3) translate(350px);
+    transition: all 1s;
+}
+#apocalipsisZombie:hover{
+    transform: scale(1.3,1.3);
+    transition: all 1s;
+}
+#jueves:hover{
+    transform: scale(1.3,1.3) translate(-350px);
+    transition: all 1s;
+}
+#fotoBanda:hover{
+    transform: scale(1.5,1.5) translate(0,100px);
+    transition: all 1s;
+}
+.headerGaleria{
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    height: 150px;
+    padding-top: 25px;
+}
+.carousel-inner>.carousel-item>img {
+    margin: 0 auto;
+}
+@media only screen and (max-width: 600px){
+    .headerGaleria{
+        background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+        height: 130px;
+        padding-top: 25px;
+    }
+    .textoAlbumes{
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        font-size: 40px ;
+        line-height: 50px;
+        color: rgb(130, 96, 168);
+        text-decoration: underline;
+        animation: tada;
+        animation-duration: 1s;
+    }
+    .flexAñosGaleria{                   /*Años de las fotos*/
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 50px;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .imagenesGaleria{              
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        justify-content:space-around;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #jueves:hover{
+        transform: none;
+        transition: none;
+    }
+    #hablaTuEspejo:hover{
+        transform: none;
+        transition: none;
+    }
+    #apocalipsisZombie:hover{
+        transform: none;
+        transition: none;
+    }
+    #hablaTuEspejo{
+        height: 90%;
+        width: 350px;
+        margin-bottom: 50px;
+        margin-top: 500px;
+    }
+    #apocalipsisZombie{
+        margin-bottom: 50px;
+    }
+    #jueves{
+        width: 350px;
+    }
+    .carousel-inner>.carousel-item>img {
+        margin: 0 auto;
+        margin-top: 550px;
+        height: 350px;
+        margin-right: 20px;
+    }
+    #hablaTuEspejoAño{
+        position: relative;
+        top: 30px;
+    }
+    #apocalipsisZombieAño{
+        position: relative;
+        top: 415px;
+    }
+    #juevesAño{
+        position: relative;
+        top: 785px;
+    }
+    .textoGaleria{
+        position: relative;
+        top: 570px;
+        padding: 40px;
+        text-align: center;
+        font-style: oblique;
+        text-decoration: underline;
+        color: rgb(130, 96, 168);
+        font-size: 40px;
+        animation: tada;
+        animation-duration: 2s;
+    }
+}
+@media only screen and (max-width:992px){
+    .headerGaleria{
+        background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+        height: 130px;
+        padding-top: 25px;
+    }
+    .textoAlbumes{
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        font-size: 40px ;
+        line-height: 50px;
+        color: rgb(130, 96, 168);
+        text-decoration: underline;
+        animation: tada;
+        animation-duration: 1s;
+    }
+    .flexAñosGaleria{                   /*Años de las fotos*/
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 50px;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .imagenesGaleria{              
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        justify-content:space-around;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #jueves:hover{
+        transform: none;
+        transition: none;
+    }
+    #hablaTuEspejo:hover{
+        transform: none;
+        transition: none;
+    }
+    #apocalipsisZombie:hover{
+        transform: none;
+        transition: none;
+    }
+    #hablaTuEspejo{
+        height: 90%;
+        width: 350px;
+        margin-bottom: 50px;
+        margin-top: 500px;
+    }
+    #apocalipsisZombie{
+        margin-bottom: 50px;
+    }
+    #jueves{
+        width: 350px;
+    }
+    .carousel-inner>.carousel-item>img {
+        margin: 0 auto;
+        margin-top: 550px;
+        height: 350px;
+    }
+    #hablaTuEspejoAño{
+        position: relative;
+        top: 30px;
+    }
+    #apocalipsisZombieAño{
+        position: relative;
+        top: 415px;
+    }
+    #juevesAño{
+        position: relative;
+        top: 785px;
+    }
+    .textoGaleria{
+        position: relative;
+        top: 570px;
+        padding: 40px;
+        text-align: center;
+        font-style: oblique;
+        text-decoration: underline;
+        color: rgb(130, 96, 168);
+        font-size: 40px;
+        animation: tada;
+        animation-duration: 2s;
+    }
+}
+@media only screen and (min-width:1200px){
+    .flexAñosGaleria{                   /*Años de las fotos*/
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 50px;
+        justify-content: space-around;
+    }
+    .añosGaleria{
+        font-size: 40px;
+        color: green;
+    }
+    .imagenesGaleria{               /*Fotos*/
+        display: flex;
+        height: 550px;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    .fotoBanda{
+        text-align: center;
+    }
+    .textoAlbumes{
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 70px;
+        font-size: 45px ;
+        color: rgb(130, 96, 168);
+        text-decoration: underline;
+        animation: tada;
+        animation-duration: 1s;
+    }
+    .textoGaleria{
+        padding: 40px;
+        text-align: center;
+        font-style: oblique;
+        text-decoration: underline;
+        color: rgb(130, 96, 168);
+        font-size: 45px;
+        animation: tada;
+        animation-duration: 2s;
+    }
+    .galeria{
+        background-color: rgb(243, 243, 243);
+    }
+    #hablaTuEspejo:hover{
+        transform: scale(1.3,1.3) translate(350px);
+        transition: all 1s;
+    }
+    #apocalipsisZombie:hover{
+        transform: scale(1.3,1.3);
+        transition: all 1s;
+    }
+    #jueves:hover{
+        transform: scale(1.3,1.3) translate(-350px);
+        transition: all 1s;
+    }
+    #fotoBanda:hover{
+        transform: scale(1.5,1.5) translate(0,100px);
+        transition: all 1s;
+    }
+}
+        /******************* NOTICIAS ************************/
+.parrafosNoticias1{
+    font-size: 20px;
+    line-height: 30px;
+    width: 40%;
+    border: 3px solid black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.parrafosNoticias2{
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 50%;
+    border: 3px solid black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 20px;
+}
+.parrafosNoticias3{
+    font-size: 20px;
+    line-height: 30px;
+    width: 40%;
+    border: 3px solid black;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+}
+.noticias{
+    background-color: rgb(243, 243, 243);
+}
+.headerNoticia{
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    padding-top: 25px;
+}
+        /******************** ACERCA DE LA BANDA *********************/
+table{
+    border: 1px solid black;
+}
+th{
+    background-color: rgb(243, 162, 162);
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+td{
+    background-color: rgb(154, 204, 154);
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    background-image:url("../img/banda2.jpg");
+    background-repeat: repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.acercaDeLaBanda{
+    background-color: rgb(243, 243, 243);
+}
+.headerAcercaBanda{
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    padding-top: 25px;
+}
+.gridAcercaDeBanda{
+    display: grid;
+    margin-left: 10px;
+    margin-right: 50px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 65px 250px;
+    grid-template-areas:"area1 area2 area3 area4 area5"                    
+                        "area6 area7 area8 area9 area10";
+    text-align: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.textoMusso{
+    grid-area: area6;
+}
+.textoTavella{
+    grid-area: area7;
+}
+.textoPintos{
+    grid-area: area8;
+}
+.textoAntuna{
+    grid-area: area9;
+}
+.textoMarrero{
+    grid-area: area10;
+}
+@media only screen and (max-width: 600px){
+    .gridAcercaDeBanda{
+        display: grid;
+        margin-left: 10px;
+        margin-right: 50px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 65px 250px;
+        grid-template-areas:"area1 area2"                    
+                            "area3 area4"
+                            "area5 area6"
+                            "area7 area8"
+                            "area9 area9"
+                            "area11 area11";
+        text-align: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+@media only screen and (min-width:600px){
+    .gridAcercaDeBanda{
+        display: grid;
+        margin-left: 10px;
+        margin-right: 50px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 65px 250px;
+        grid-template-areas:"area1 area2"                    
+                            "area3 area4"
+                            "area5 area6"
+                            "area7 area8"
+                            "area9 area9"
+                            "area11 area11";
+        text-align: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .gridAcercaDeBanda{
+        display: grid;
+        margin-left: 10px;
+        margin-right: 50px;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 65px 250px;
+        grid-template-areas:"area1 area2 area3 area4 area5"                    
+                            "area6 area7 area8 area9 area10";
+        text-align: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
+        /************************ CONTACTO  **********************/
+#checkbox{
+    width: 145px
+}
+label{
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    margin: 10px;
+}
+form{
+    text-align: center;
+    line-height: 30px;
+}
+.tituloContacto{
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    animation: heartBeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    }
+.contacto{
+    background-color: rgb(243, 243, 243);
+}
+.headerContacto{
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    padding-top: 25px;
+}
+        /*************************  Clases compartidas ********************/
+
+p{
+    font-size: medium;
+    color: mediumblue;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+}
+h1{    
+    text-align: center;
+    font-style: oblique;
+    font-weight:unset;
+    font-size: 35px;
+    text-decoration: underline;
+    font-family: 'Archivo Black', sans-serif;
+    padding-bottom: 20px;
+    animation: rotateIn;
+    animation-duration: 0.5s;
+}
+footer{
+    position: relative;
+    top: 630px;
+    font-size: 20px;
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+#colorDelFondo{
+    background-color: rgb(226, 209, 191);
+}
