@@ -288,7 +288,7 @@
     #logoCuarteto{
         height: 120px;
         position: relative;
-        left: 66%;
+        left: 70%;
         border: 5px solid rgb(88, 58, 0);
         bottom: 100px;
     }
@@ -409,7 +409,7 @@
     #logoCuarteto{
         height: 120px;
         position: relative;
-        left: 66%;
+        left: 70%;
         border: 5px solid rgb(88, 58, 0);
         bottom: 120px;
     }
@@ -445,6 +445,8 @@
     padding-bottom: 70px;
     font-size: 45px ;
     color: rgb(130, 96, 168);
+    font-style: oblique;
+    font-family: 'Archivo Black', sans-serif;
     text-decoration: underline;
     animation: tada;
     animation-duration: 1s;
@@ -454,6 +456,7 @@
     text-align: center;
     font-style: oblique;
     text-decoration: underline;
+    font-family: 'Archivo Black', sans-serif;
     color: rgb(130, 96, 168);
     font-size: 45px;
     animation: tada;
@@ -463,19 +466,15 @@
     background-color: rgb(243, 243, 243);
 }
 #hablaTuEspejo:hover{
-    transform: scale(1.3,1.3) translate(350px);
+    transform: scale(1.1,1.1);
     transition: all 1s;
 }
 #apocalipsisZombie:hover{
-    transform: scale(1.3,1.3);
+    transform: scale(1.1,1.1);
     transition: all 1s;
 }
 #jueves:hover{
-    transform: scale(1.3,1.3) translate(-350px);
-    transition: all 1s;
-}
-#fotoBanda:hover{
-    transform: scale(1.5,1.5) translate(0,100px);
+    transform: scale(1.1,1.1) translate(-350px);
     transition: all 1s;
 }
 .headerGaleria{
@@ -485,6 +484,11 @@
 }
 .carousel-inner>.carousel-item>img {
     margin: 0 auto;
+}
+#carouselExampleIndicators{
+    background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 @media only screen and (max-width: 600px){
     .headerGaleria{
@@ -499,6 +503,8 @@
         font-size: 40px ;
         line-height: 50px;
         color: rgb(130, 96, 168);
+        font-style: oblique;
+        font-family: 'Archivo Black', sans-serif;
         text-decoration: underline;
         animation: tada;
         animation-duration: 1s;
@@ -570,6 +576,7 @@
         text-align: center;
         font-style: oblique;
         text-decoration: underline;
+        font-family: 'Archivo Black', sans-serif;
         color: rgb(130, 96, 168);
         font-size: 40px;
         animation: tada;
@@ -588,6 +595,8 @@
         padding-bottom: 40px;
         font-size: 40px ;
         line-height: 50px;
+        font-style: oblique;
+        font-family: 'Archivo Black', sans-serif;
         color: rgb(130, 96, 168);
         text-decoration: underline;
         animation: tada;
@@ -658,6 +667,7 @@
         padding: 40px;
         text-align: center;
         font-style: oblique;
+        font-family: 'Archivo Black', sans-serif;
         text-decoration: underline;
         color: rgb(130, 96, 168);
         font-size: 40px;
@@ -691,6 +701,8 @@
         padding-top: 25px;
         padding-bottom: 70px;
         font-size: 45px ;
+        font-style: oblique;
+        font-family: 'Archivo Black', sans-serif;
         color: rgb(130, 96, 168);
         text-decoration: underline;
         animation: tada;
@@ -698,6 +710,7 @@
     }
     .textoGaleria{
         padding: 40px;
+        font-family: 'Archivo Black', sans-serif;
         text-align: center;
         font-style: oblique;
         text-decoration: underline;
@@ -710,51 +723,40 @@
         background-color: rgb(243, 243, 243);
     }
     #hablaTuEspejo:hover{
-        transform: scale(1.3,1.3) translate(350px);
+        transform: scale(1.1,1.1);
         transition: all 1s;
     }
     #apocalipsisZombie:hover{
-        transform: scale(1.3,1.3);
+        transform: scale(1.1,1.1);
         transition: all 1s;
     }
     #jueves:hover{
-        transform: scale(1.3,1.3) translate(-350px);
-        transition: all 1s;
-    }
-    #fotoBanda:hover{
-        transform: scale(1.5,1.5) translate(0,100px);
+        transform: scale(1.1,1.1);
         transition: all 1s;
     }
 }
         /******************* NOTICIAS ************************/
-.parrafosNoticias1{
-    font-size: 20px;
-    line-height: 30px;
-    width: 40%;
-    border: 3px solid black;
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-left: 20px;
-    margin-top: 10px;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-.parrafosNoticias2{
-    text-align: right;
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 50%;
-    border: 3px solid black;
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 20px;
+#noticiasJueves{
+    margin-top: 30px;
+    height: 35%;
+    width: 35%;
 }
-.parrafosNoticias3{
-    font-size: 20px;
-    line-height: 30px;
-    width: 40%;
-    border: 3px solid black;
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-left: 20px;
+#noticiasJueves:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+.textoNoticias{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 25px;
+    line-height: 150%;
 }
 .noticias{
     background-color: rgb(243, 243, 243);
@@ -762,6 +764,87 @@
 .headerNoticia{
     background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
     padding-top: 25px;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #noticiasJueves{
+        margin-top: 30px;
+        height: 50%;
+        width: 50%;
+    }
+    .textoNoticias{
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .noticias{
+        background-color: rgb(243, 243, 243);
+    }
+    .headerNoticia{
+        background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+        padding-top: 25px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #noticiasJueves{
+        margin-top: 30px;
+        height: 50%;
+        width: 50%;
+    }
+    .textoNoticias{
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .noticias{
+        background-color: rgb(243, 243, 243);
+    }
+    .headerNoticia{
+        background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+        padding-top: 25px;
+    }
+}
+@media only screen and (min-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #noticiasJueves{
+        margin-top: 30px;
+        height: 50%;
+        width: 50%;
+    }
+    .textoNoticias{
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 25px;
+        line-height: 120%;
+    }
+    .noticias{
+        background-color: rgb(243, 243, 243);
+    }
+    .headerNoticia{
+        background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
+        padding-top: 25px;
+    }
 }
         /******************** ACERCA DE LA BANDA *********************/
 table{
@@ -927,11 +1010,11 @@ h1{
 }
 footer{
     position: relative;
-    top: 630px;
+    top: 500px;
     font-size: 20px;
     background-image: linear-gradient(to right, rgb(255, 166, 0), rgba(138, 97, 21, 0.719));
     padding: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 }
 #colorDelFondo{
     background-color: rgb(226, 209, 191);
